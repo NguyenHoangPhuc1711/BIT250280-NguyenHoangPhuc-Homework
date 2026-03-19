@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-cities = pd.read_csv("D:\giả lập pokm\california_cities.csv")
+cities = pd.read_csv("D:\Python\Tệp Tài Liệu Python\california_cities.csv")
 print(cities.columns)
 cities['density'] = cities['population_total'] / cities['area_total_km2']
 top_density = cities.sort_values(by='density', ascending=False).head(15)
